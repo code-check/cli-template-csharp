@@ -1,0 +1,6 @@
+build:
+  - mcs src/*.cs -out:MyApp.exe
+files:
+  - .gitignore
+  - src/App.cs
+command: mono MyApp.exe
