@@ -2,5 +2,6 @@ build:
   - mcs src/*.cs -out:MyApp.exe
 env:
   APP_COMMAND: mono MyApp.exe
+main: src/App.cs
 test: mocha
 
