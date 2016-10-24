@@ -1,5 +1,5 @@
 build:
-  - mcs src/*.cs -out:TheApp.exe
+  - mcs "src/*.cs" -out:TheApp.exe
 env:
   APP_COMMAND: mono TheApp.exe
 main: src/App.cs
