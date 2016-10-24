@@ -1,26 +1,23 @@
-# CLI template for C#
+# Command line application template for C#
 
-This is template app for making CLI application with C#.  
-You can make CLI application by editing [src/App.cs](src/App.cs)
+Implement CLI application by editing [src/App.cs](src/App.cs)
 
 ## How to get input parameters
 The function Main have args parameter.
 
-``` C#
+```cs
 public class App
 {
     static public void Main(string[] args)
     {
-        foreach (string arg in args) {
-           Console.WriteLine(arg);
-        }
+      // code to run
     }
 }
 ```
 
 ## How to output result
-You can use `Console.WriteLine` method
+You can use `Console.WriteLine` method to out put your results.
 
-``` C#
+```cs
   Console.WriteLine("hoge")
 ```

@@ -1,28 +1,23 @@
-# CLIアプリケーション作成用テンプレート(C#)
+# コマンドラインアプリケーション(CLI アプリ)作成用テンプレート(C#)
 
-C#でCLIアプリケーションを作成するためのテンプレートです。
-
-[src/App.cs](src/App.cs)を編集することでCLIアプリケーションを作成することができます。
+[src/App.cs](src/App.cs)を編集して、CLIアプリを実装してください。
 
 ## コマンドライン引数の取得方法
 Main関数の引数argsで配列として取得することができます。
 
-``` C#
+```cs
 public class App
 {
     static public void Main(string[] args)
     {
-        foreach (string arg in args) {
-           Console.WriteLine(arg);
-        }
+        // code to run
     }
 }
 ```
 
 ## コマンド実行結果の標準出力への出力
-標準の`Console.WriteLine`メソッドを使用してください。
+標準の `Console.WriteLine` メソッド等が使用可能です。
 
-``` C#
+```cs
   Console.WriteLine("hoge")
 ```
-
