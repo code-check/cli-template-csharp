@@ -2,5 +2,5 @@ build:
   - mcs "src/*.cs" -out:TheApp.exe
 files:
   - .gitignore
-  - src/App.cs
+  - src/MainApp.cs
 command: mono TheApp.exe
