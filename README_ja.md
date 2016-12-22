@@ -24,7 +24,7 @@ public class MainApp
 ```
 
 ## GitHub を用いたローカル受験の場合
-codecheck コマンドでテストを行う場合、次のように [codecheck.yml](codecheck.yml) を修正する必要があります。
+codecheck コマンドでテストを行う場合、次のように [codecheck.yml](codecheck.yml) を修正する必要があります。  
 （提出時にはもとに戻すことを忘れないでください！）
 
 ```yaml
