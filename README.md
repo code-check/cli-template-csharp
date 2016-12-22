@@ -25,6 +25,7 @@ You can use `Console.WriteLine` method to out put your results.
 
 ## For local exam using GitHub
 To use codecheck command in your local environment, you need to modify [codecheck.yml](./codecheck.yml) in order to run test properly.
+Don't forget to **restore the file** at the time of submit!
 
 ```yaml
 # Before
