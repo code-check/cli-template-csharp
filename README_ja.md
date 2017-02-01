@@ -22,27 +22,3 @@ public class MainApp
 ```cs
   Console.WriteLine("hoge")
 ```
-
-## GitHub を用いたローカル受験の場合
-codecheck コマンドでテストを行う場合、次のように [codecheck.yml](codecheck.yml) を修正する必要があります。  
-（提出時にはもとに戻すことを忘れないでください！）
-
-```yaml
-# Before
-build:
-  - mcs src/*.cs -out:TheApp.exe
-env:
-  APP_COMMAND: mono TheApp.exe
-main: src/MainApp.cs
-test: mocha
-```
-
-```yaml
-# After
-build:
-  - mcs "src/*.cs" -out:TheApp.exe
-env:
-  APP_COMMAND: mono TheApp.exe
-main: src/MainApp.cs
-test: mocha
-```
