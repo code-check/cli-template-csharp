@@ -22,27 +22,3 @@ You can use `Console.WriteLine` method to out put your results.
 ```cs
   Console.WriteLine("hoge")
 ```
-
-## For local exam using GitHub
-To use codecheck command in your local environment, you need to modify [codecheck.yml](./codecheck.yml) in order to run test properly.
-Don't forget to **restore the file** at the time of submit!
-
-```yaml
-# Before
-build:
-  - mcs src/*.cs -out:TheApp.exe
-env:
-  APP_COMMAND: mono TheApp.exe
-main: src/MainApp.cs
-test: mocha
-```
-
-```yaml
-# After
-build:
-  - mcs "src/*.cs" -out:TheApp.exe
-env:
-  APP_COMMAND: mono TheApp.exe
-main: src/MainApp.cs
-test: mocha
-```
