@@ -6,7 +6,7 @@ public class MainApp
     {
         for (int i = 0; i < args.Length; i++)
         {
-           string output = String.Format("argv[{0}]: {0}", i, args[i]);
+           string output = String.Format("argv[{0}]: {1}", i, args[i]);
            Console.WriteLine(output);
         }
     }
