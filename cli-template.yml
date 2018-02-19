@@ -3,4 +3,5 @@ build:
 files:
   - .gitignore
   - src/MainApp.cs
+main: src/MainApp.cs
 command: mono TheApp.exe
