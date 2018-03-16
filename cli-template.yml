@@ -1,7 +1,9 @@
 build:
-  - mcs src/*.cs -out:TheApp.exe
+  - sh build.sh
 files:
-  - .gitignore
+  - build.sh
   - src/MainApp.cs
 main: src/MainApp.cs
 command: mono TheApp.exe
+envConf:
+  imageName: "givery/track-mono-5.2"

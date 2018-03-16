@@ -22,3 +22,18 @@ public class MainApp
 ```cs
   Console.WriteLine("hoge")
 ```
+
+## 外部ライブラリの追加方法
+外部ライブラリを使用する場合は以下の手順で実施してください。
+
+- [build.sh](build.sh)に以下の内容を `mcs` の前に追加  
+(複数のライブラリのインストールも行を追加していく事で可能です)
+
+```
+nuget [LibraryName]
+```
+
+必要に応じて`mcs`コマンドの`-reference`オプションを追加してください。
+
+環境変数`MONO_PATH`が必要な場合は、TrackのUIより環境変数を設定してください。  
+`build.sh`内でexportしても有効にはなりません。

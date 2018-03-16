@@ -22,3 +22,18 @@ You can use `Console.WriteLine` method to out put your results.
 ```cs
   Console.WriteLine("hoge")
 ```
+
+## Install External Libraries
+If you want to use external libraries, do the following:
+
+- Add the following lines to [build.sh](build.sh), before the `mcs` line  
+(You can have multiple libraries by adding more lines)
+
+```
+nuget [LibraryName]
+```
+
+You can add `-reference` option or some others, if these are required.
+
+If you need to define env var `MONO_PATH`, please define it on Track UI.  
+You can't define any environment variables in `build.sh`
